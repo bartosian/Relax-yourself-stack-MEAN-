@@ -1,0 +1,21 @@
+<div *ngFor="let location of locations" class="card fill-viewport">
+  <div class="card-block">
+    <h4>
+      <a href="/location/{{location._id}}">{{location.name}}</a>
+      <img src="../../assets/images/1.jpg" class="rounded float-right img-thumbnail d-none d-sm-block" alt="Restaurant">
+      <img src="../../assets/images/2.jpg" class="rounded float-right img-thumbnail d-none d-md-block" alt="Restaurant">
+      <img src="../../assets/images/3.jpg" class="rounded float-right img-thumbnail  d-none d-lg-block" alt="Restaurant">
+      <small>&nbsp;
+        <i class="fa fa-star{{location.rating > 0 ? '' : '-o'}}"></i>
+        <i class="fa fa-star{{location.rating > 1 ? '' : '-o'}}"></i>
+        <i class="fa fa-star{{location.rating > 2 ? '' : '-o'}}"></i>
+        <i class="fa fa-star{{location.rating > 3 ? '' : '-o'}}"></i>
+        <i class="fa fa-star{{location.rating > 4 ? '' : '-o'}}"></i>
+      </small>
+    </h4>
+    <p class="address">{{location.address}}</p>
+    <div class="facilities">
+      <span *ngFor="let fac of location.facilities" class="badge badge-warning">{{fac}}</span>
+    </div>
+  </div>
+</div>

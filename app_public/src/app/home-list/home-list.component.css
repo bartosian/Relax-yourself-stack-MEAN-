@@ -1,0 +1,13 @@
+.card {
+  background: linear-gradient(rgba(100,181,246 ,1), rgba(0,0,0,0.4)), url('../../assets/images/oboi_home_list.jpg') 0% 0%/cover
+}
+.fill-viewport {
+  min-height: 25vh
+}
+img {
+  width: 200px;
+  height: 150px;
+}
+i.fa {
+  color: gold;
+}
