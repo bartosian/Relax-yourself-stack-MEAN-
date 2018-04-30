@@ -1,0 +1,57 @@
+<nav class="navbar fixed-top navbar-toggleable navbar-inverse">
+  <div class="container">
+    <button type="button" data-toggle="collapse" data-target="#navbarMain"
+            class="navbar-toggler navbar-toggler-center">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <a href="/" class="navbar-brand">Relax</a>
+    <div id="navbarMain" class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a routerLink="about" routerLinkActive="active" class="nav-link">About </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+  <section id="footer">
+    <div class="container">
+      <div class="row  py-2  align-items-center">
+        <div class="col-12 col-md-6">
+          <ul class="list-unstyled">
+            <li><h6 class="text-white">SUPPORT</h6></li>
+            <li class="text-justify">RELAX is a product that is currently supported by Kiryl Bartashevich. All rights reserved.
+              </li>
+          </ul>
+        </div>
+        <div class="col-4 col-md-2">
+          <ul class="list-unstyled">
+            <li><h6 class="text-white">CONTACTS</h6></li>
+            <li><a class="text-white" href="https://www.linkedin.com/in/kiryl-bartashevich-42291614b/" target="_blank">LinkedIn</a></li>
+            <li><a class="text-white" href="https://github.com/bartosian" target="_blank">GitHub</a></li>
+            <li><a class="text-white" href="https://www.facebook.com/profile.php?id=100005448490309" target="_blank">Facebook</a></li>
+            <li><a class="text-white" href="https://myaccount.google.com/?utm_source=OGB&utm_medium=act" target="_blank">Gmail</a></li>
+          </ul>
+        </div>
+        <div class="col-4 col-md-2">
+          <ul class="list-unstyled">
+            <li><h6 class="text-white">APIS</h6></li>
+            <li>Rich data</li>
+            <li>Simple</li>
+            <li>Real time</li>
+            <li>Social</li>
+          </ul>
+        </div>
+        <div class="col-4 col-md-2">
+          <ul class="list-unstyled">
+            <li><h6 class="text-white">LEGAL</h6></li>
+            <li>Terms</li>
+            <li>Legal</li>
+            <li>Privacy</li>
+            <li>License</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

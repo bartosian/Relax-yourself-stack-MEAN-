@@ -1,0 +1,7 @@
+#sidebar,#select {
+  background: linear-gradient(rgba(100,181,246 ,1), rgba(0,0,0,0.7)), url('../../assets/images/oboi_home_list.jpg') 0% 0%/cover;
+  border: 1px solid darkblue;
+}
+#select {
+  height:20vh;
+}

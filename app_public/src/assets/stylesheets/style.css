@@ -3,18 +3,19 @@
 body {
   font-family: "Cabin", Arial, sans-serif;
   color: #ffffff;
-  background-color: lightslategrey;
+  background: linear-gradient(rgba(20,229,240 ,0.9), rgba(0,0,0,0.4)), url('../../assets/images/oboi_body.jpg') 0% 0%/cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, li {
   font-family: 'Lobster', cursive;
 }
 h1 small {
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 2px 2px 2px white;
+  color: #EE8606;
 }
-.navbar {
-  background-color: darkorange;
-  border: 1px solid lightgrey;
+
+.navbar, #footer {
+  background: linear-gradient(rgba(220,14,14 ,1), rgba(0,0,0,0.1)), url('../../assets/images/oboi_nav2.jpg') 0% 0%/cover;
 }
 
 .navbar-brand {
@@ -27,11 +28,6 @@ h1 small {
   margin-bottom: 1.5em;
   padding-bottom: 0.5em;
 }
-
-h1 small {
-  color: #aaa;
-}
-
 
 .card-primary {
   border-color: #a2ced3;
