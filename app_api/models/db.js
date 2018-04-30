@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
-let dbURI = 'mongodb://localhost/Relax';
-if (process.env.NODE_ENV === 'production') {
-    dbURI =
-        process.env.MLAB_URI;
-}
+let dbURI = 'mongodb://bartosian:bart15121989@ds053788.mlab.com:53788/relax';
+
 mongoose.connect(dbURI);
 
 
