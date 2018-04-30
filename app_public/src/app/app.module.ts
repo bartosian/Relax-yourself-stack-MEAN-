@@ -11,6 +11,11 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LineBreaksPipe } from './line-breaks.pipe';
 import { RatingComponent } from './rating/rating.component';
+import { LocDetailsComponent } from './loc-details/loc-details.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
+import { MostRecentPipe } from './most-recent.pipe';
+import {FormsModule} from "@angular/forms";
+import {AppRoutingModule} from "./app-routing/app-routing.module";
 
 
 @NgModule({
@@ -22,21 +27,16 @@ import { RatingComponent } from './rating/rating.component';
     HeaderComponent,
     SidebarComponent,
     LineBreaksPipe,
-    RatingComponent
+    RatingComponent,
+    LocDetailsComponent,
+    DetailsPageComponent,
+    MostRecentPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        component: HomePageComponent
-      },
-      {
-        path: 'about',
-        component: AboutComponent
-      }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [StaticComponent]

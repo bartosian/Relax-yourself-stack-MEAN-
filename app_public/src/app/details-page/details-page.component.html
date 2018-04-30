@@ -1,0 +1,7 @@
+<app-header [content]="pageContent.header"></app-header>
+<div class="row">
+  <div class="col-12 col-lg-8">
+    <app-loc-details *ngIf="newLocation" [location]="newLocation">Loading...</app-loc-details>
+  </div>
+  <app-sidebar class="col-12  col-lg-4" [content]="pageContent.sidebar"></app-sidebar>
+</div>

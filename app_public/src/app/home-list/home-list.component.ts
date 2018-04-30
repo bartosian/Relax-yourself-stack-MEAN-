@@ -1,15 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {RelaxDataService} from "../relax-data.service";
 
-export class Location {
-  name: string;
-  address: string;
-  rating: number;
-  facilities: [string];
-  _id: string;
-  images: [string];
-  position: [number];
-}
+import { Location } from '../location';
 
 @Component({
   selector: 'app-home-list',

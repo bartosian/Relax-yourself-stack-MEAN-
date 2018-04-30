@@ -1,11 +1,12 @@
 <div *ngFor="let location of locations" class="card fill-viewport">
   <div class="card-block">
     <h4>
-      <a href="/location/{{location._id}}">{{location.name}}</a>
-      <img src="../../assets/images/1.jpg" class="rounded float-right img-thumbnail" alt="Restaurant">
-      <img src="../../assets/images/2.jpg" class="rounded float-right img-thumbnail d-none d-md-block" alt="Restaurant">
-      <app-rating [rating]="location.rating"></app-rating>
+      <a routerLink="/location/{{location._id}}">{{location.name}}</a>
+      <img src="../../assets/images/{{location.images[0]}}" class="rounded float-right img-thumbnail" alt="Restaurant">
+      <img src="../../assets/images/{{location.images[1]}}" class="rounded float-right img-thumbnail d-none d-md-block" alt="Restaurant">
+
     </h4>
+    <app-rating  [rating]="location.rating"></app-rating>
     <p class="address">{{location.address}}</p>
     <div class="facilities">
       <span *ngFor="let fac of location.facilities" class="badge badge-warning">{{fac}}</span>
